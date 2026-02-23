@@ -1,4 +1,7 @@
 import {Link} from "react-router-dom";
+import Navbar from "./Navbar";
+import { ArrowUpLeft } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 
 const Hero = ()=>{
@@ -8,17 +11,7 @@ const Hero = ()=>{
             <div className=" flex gap-8  p-4 h-full w-full text-gray-800 bg-gray-100">
                 <div className="flex flex-col    min-w-2xl ">
                     
-                    <nav className="flex justify-between items-center z-10 text-lg font-thin">
-                        <div className=""><Link to="/">Home</Link></div>
-
-                        <div>
-                            <ul className="flex space-x-4">
-                                <li><Link to="/about">Books</Link></li>
-                                <li><Link to="/career">Career</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <Navbar/>
 
                     <div className="flex items-center justify-center py-65  max-w-3xl ">
                         <h1 className="text-9xl text-left font-mono  ">Intimacy Empower</h1>
@@ -27,7 +20,7 @@ const Hero = ()=>{
                         
                 </div>
                 
-                <div className=" ">
+                <div className="w-full ">
                     <img 
                     src="heroimg.jpeg" 
                     alt="hero image" className="  object-cover"/>
@@ -59,8 +52,14 @@ const Hero = ()=>{
             </div>
             <div className="flex items-center justify-center border-t border-b p-1 bg-gray-100">
                 <ul className="flex space-x-4 font-mono text-thin *:p-1 *: *:border-1* *:border-gray-700 *:border-b">
-                    <li>Book a consultation</li>
-                    <li><span>Learn More</span> <span></span></li>
+                    <Link to="/consultation" className="inline-flex space-x-2">
+                        <ArrowUpLeft size={24} color="black" />  
+                        <span>Book a consultation</span>
+                    </Link>
+                    <Link to="/learn-more" className="inline-flex space-x-2">
+                        <span>Learn More</span>
+                        <ArrowUpRight size={24} color="black" />
+                    </Link>
                 </ul>
             </div>
        </div>
