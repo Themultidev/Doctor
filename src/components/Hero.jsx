@@ -37,7 +37,7 @@ const Hero = ()=>{
                             <h2 className="text-2xl font-semibold font-mono">Worlu Gift Azubike</h2>
                             <h2 className="text-2xl font-semibold font-mono">Counsultant DR</h2>
                             <p className="font-light text-sm">8 Years Of experience</p>
-                            <ul className="flex space-x-3 font- font-mono *:p-4 *:rounded-full *:bg-gray-300">
+                            <ul className="flex space-x-3 font- font-mono *:p-4 *:rounded *:bg-gray-900 text-amber-50">
                                 <li>MMRs</li>
                                 <li>PHD</li>
                             </ul>   
@@ -47,13 +47,6 @@ const Hero = ()=>{
                             
                         </div>
 
-                        {/* <div className="flex flex-col space-y-1 leading-1" >
-                            <h2 className="text-2xl font-semibold">Counsultant DR</h2>
-                            <ul className="flex space-x-3 font- font-mono *:p-4 *:rounded-full *:bg-gray-300">
-                                <li>MMRs</li>
-                                <li>PHD</li>
-                            </ul>           
-                        </div> */}
                     </div>
                     <p className="max-w-2xl mt-4 text-gray-600 font-light">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nisl nunc eget nisl.
