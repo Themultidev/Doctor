@@ -34,7 +34,7 @@ const Navbar = ()=>{
             </div> */}
 
             
-            <nav className=" z-10 text-lg font-thin border-b md:border-b-0 py-2 md:py-0   ">
+            <nav className=" z-10 text-lg font-thin border-b md:border-b-0 py-4 md:py-0 md:fixed md:top-0 md:left-0 md:right-0  bg-gray-200  ">
                 <div className="flex justify-between items-center">
                     <div className=""><Link to="/">Home</Link></div>
                     

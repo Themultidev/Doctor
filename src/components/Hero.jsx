@@ -25,7 +25,7 @@ const Hero = ()=>{
                         
                 </div>
                 
-                <div className="w-full md:flex lg:flex lg:flex-col">
+                <div className="w-full md:flex md:space-x-5 lg:flex lg:flex-col">
                     <div className="">
                         <img 
                         src="heroimg.jpeg" 
