@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import {BrowserRouter} from "react-router-dom";
 
+import Contact from './pages/Contact.jsx';
 import Notfound from "./pages/Notfound.jsx";
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -12,6 +13,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 const router = createBrowserRouter(
   [
     {path:"/", element:<App/>},
+    {path:"/Contact", element:<Contact/>},
     {path:"*", element:<Notfound/>}
   ]
 )

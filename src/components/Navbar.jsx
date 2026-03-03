@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
+import Contact from "../pages/Contact";
 
 const Navbar = ()=>{
     
@@ -45,7 +46,7 @@ const Navbar = ()=>{
                         <ul className="flex space-x-4">
                             <li><Link to="/about">Books</Link></li>
                             <li><Link to="/career">Career</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
+                            <li><Link to="/Contact">Contact</Link></li>
                         </ul>
                     </div>
                     
@@ -56,7 +57,7 @@ const Navbar = ()=>{
                         <ul className="flex flex-col items space-y-4 ">
                             <li><Link to="/about">Books</Link></li>
                             <li><Link to="/career">Career</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
+                            <li><Link to="/Contact">Contact</Link></li>
                         </ul>
                     </div>
 
